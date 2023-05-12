@@ -5,17 +5,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
   
   <title>Interactive comments section</title>
 
 </head>
 <body>
 
-  <!-- Pull dynamic content from the data.json file -->
-  
+    <section class="comments">
+      <div class="like-container">
+        <a>
+          <img src="./assets/images/icon-plus.svg">
+        </a>
+        
+        <span class="like-number">12</span>
+
+        <a>
+          <img src="./assets/images/icon-minus.svg">
+        </a>
+
+      </div>
+
+      <div class="text-container">
+        <div class="text-title">
+          <div>
+            <img src="./assets/images/avatars/image-amyrobson.png" height="30px" width="30px">
+
+            <span class="user-name">amyrobson</span>
+            <span class="text-time">1 month ago</span>
+          </div>
+          
+          <a class="reply-button">
+            <img src="./assets/images/icon-reply.svg">Reply
+          </a>          
+        </div>
+
+        <div class="message-text">
+          <p>Impressive! Though it seems the drag feature could be improved. 
+            But overall it looks incredible. You've nailed the design and the responsiveness at 
+            various breakpoints works really well.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="comments">
+      <div class="like-container">
+        <a>
+          <img src="./assets/images/icon-plus.svg">
+        </a>
+        
+        <span class="like-number">5</span>
+
+        <a>
+          <img src="./assets/images/icon-minus.svg">
+        </a>
+
+      </div>
+
+      <div class="text-container">
+        <div class="text-title">
+          <div>
+            <img src="./assets/images/avatars/image-maxblagun.png" height="30px" width="30px">
+
+            <span class="user-name">maxblagun</span>
+            <span class="text-time">2 weeks ago</span>
+          </div>
+          
+          <a class="reply-button">
+            <img src="./assets/images/icon-reply.svg">Reply
+          </a>          
+        </div>
+
+        <div class="message-text">
+          <p>Woah, your project looks awesome! How long have you been coding for? I'm still new,
+            but think I want to dive into React as well soon. Perhaps you can give me an insight 
+            on where I can learn React? Thanks!</p>
+        </div>
+      </div>
+    </section>
+    
+  <!--
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <a href="https://github.com/BoariniLucas" target="_blank">Coded by Lucas Boarini</a>
   </div>
+  -->
 </body>
 </html>

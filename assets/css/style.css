@@ -1,0 +1,100 @@
+:root {
+    --principalFont: 'Rubik', sans-serif;
+    --whiteColor: #ffffff;
+    --textColor: #686d74;
+    --bgColor: #f5f6fa;
+    --bgteste: #adaeb1;
+    --numberCounterColor: #5b59a1;
+    --replyColor: #5357b6;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--principalFont);
+    font-size: 16px;
+    width: 100%;
+    padding: 1em;
+    box-sizing: border-box;
+    background-color: var(/*--bgteste*/ --bgColor );
+}
+
+.comments {
+    display: flex;
+    height: 10em;
+    width: 42em;
+    border-radius: 8px;
+    margin: 0.5em 0;
+    padding: 1em;
+    box-sizing: border-box;
+    background-color: var(--whiteColor);
+}
+
+.like-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 5.5em;
+    width: 3em;
+    border-radius: 8px;
+    background-color: var(--bgColor);
+}
+
+.like-container span {
+    font-weight: bold;
+    color: var(--numberCounterColor);
+}
+
+.like-container a {
+    margin: 0.6em 0;
+}
+
+.text-container {
+    height: 100%;
+    width: 100%;
+    margin-left: 1em;
+}
+
+.text-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2.5em;
+    width: 100%;
+}
+
+.text-title img {
+    margin-right: 0.5em;
+}
+
+.text-title div {
+    display: flex;
+    align-items: center;
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+.text-time {
+    margin-left: 1em;
+    color: var(--textColor);
+}
+
+.reply-button {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--replyColor);
+}
+
+.message-text {
+    font-size: 15px;
+    height: 5.5em;
+    width: 100%;
+    line-height: 18px;
+    padding: 0.5em 0;
+    box-sizing: border-box;
+    color: var(--textColor);
+}
