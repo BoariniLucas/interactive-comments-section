@@ -17,7 +17,7 @@ body {
     width: 100%;
     padding: 1em;
     box-sizing: border-box;
-    background-color: var(/*--bgteste*/ --bgColor );
+    background-color: var(--bgteste /*--bgColor*/ );
 }
 
 .comments {
@@ -28,7 +28,18 @@ body {
     margin: 0.5em 0;
     padding: 1em;
     box-sizing: border-box;
-    background-color: var(--whiteColor);
+    background-color: green/*var(--whiteColor)*/;
+}
+
+.comments-reply {
+
+    height: 10em;
+    width: 30em;
+    border-radius: 8px;
+    margin: 0.5em 0;
+    padding: 1em;
+    box-sizing: border-box;
+    background-color: greenyellow;
 }
 
 .like-container {
