@@ -6,6 +6,7 @@
     --bgteste: #adaeb1;
     --numberCounterColor: #5b59a1;
     --replyColor: #5357b6;
+    --replyUserTag: #5a5ba5;
 }
 
 body {
@@ -20,6 +21,14 @@ body {
     background-color: var(--bgteste /*--bgColor*/ );
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 42em;
+    background-color: rebeccapurple;
+}
+
 .comments {
     display: flex;
     height: 10em;
@@ -32,7 +41,7 @@ body {
 }
 
 .comments-reply {
-
+    display: flex;
     height: 10em;
     width: 30em;
     border-radius: 8px;
@@ -40,6 +49,11 @@ body {
     padding: 1em;
     box-sizing: border-box;
     background-color: greenyellow;
+}
+
+.user-reply-tag {
+    font-weight: bold;
+    color: var(--replyUserTag);
 }
 
 .like-container {
