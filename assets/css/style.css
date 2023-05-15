@@ -29,6 +29,11 @@ main {
     background-color: rebeccapurple;
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+}
+
 .comments {
     display: flex;
     height: 10em;
@@ -42,6 +47,7 @@ main {
 
 .comments-reply {
     display: flex;
+    align-self: flex-end;
     height: 10em;
     width: 30em;
     border-radius: 8px;
