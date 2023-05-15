@@ -6,7 +6,9 @@
     --bgteste: #adaeb1;
     --numberCounterColor: #5b59a1;
     --replyColor: #5357b6;
+    --deleteColor: #f36665;
     --replyUserTag: #5a5ba5;
+    --lineReplyComment: #e8e9ed;
 }
 
 body {
@@ -16,7 +18,7 @@ body {
     font-family: var(--principalFont);
     font-size: 16px;
     width: 100%;
-    padding: 1em;
+    padding: 0.5em;
     box-sizing: border-box;
     background-color: var(--bgteste /*--bgColor*/ );
 }
@@ -29,17 +31,33 @@ main {
     background-color: rebeccapurple;
 }
 
-section {
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 8.3em;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.comments-container {
     display: flex;
     flex-direction: column;
 }
 
+.comments-reply-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 .comments {
     display: flex;
-    height: 10em;
+    height: 9em;
     width: 42em;
     border-radius: 8px;
-    margin: 0.5em 0;
+    margin: 0.3em 0;
     padding: 1em;
     box-sizing: border-box;
     background-color: green/*var(--whiteColor)*/;
@@ -47,14 +65,21 @@ section {
 
 .comments-reply {
     display: flex;
-    align-self: flex-end;
-    height: 10em;
-    width: 30em;
+    height: 9em;
+    width: 33em;
     border-radius: 8px;
-    margin: 0.5em 0;
     padding: 1em;
     box-sizing: border-box;
     background-color: greenyellow;
+}
+
+.comments-reply-line {
+    display: flex;
+    justify-content: end;
+    height: 9em;
+    width: 38em;
+    margin: 0.3em 0;
+    border-left: 1px solid var(--lineReplyComment);
 }
 
 .user-reply-tag {
@@ -109,6 +134,20 @@ section {
     font-weight: bold;
 }
 
+.tag-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.3em;
+    width: 2.3em;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 3px;
+    margin: 0 0 0 0.2em;
+    color: var(--whiteColor);
+    background-color: var(--replyUserTag);
+}
+
 .text-time {
     margin-left: 1em;
     color: var(--textColor);
@@ -120,6 +159,18 @@ section {
     color: var(--replyColor);
 }
 
+.edit-button {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--replyColor);
+}
+
+.delete-button {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--deleteColor);
+}
+
 .message-text {
     font-size: 15px;
     height: 5.5em;
@@ -128,4 +179,26 @@ section {
     padding: 0.5em 0;
     box-sizing: border-box;
     color: var(--textColor);
+}
+
+.create-comment {
+    display: flex;
+    align-items: center;
+    height: 5em;
+    width: 42em;
+    border-radius: 8px;
+    margin: 0.3em 0;
+    background-color: #f36665/*var(--whiteColor)*/;
+}
+
+.send-button {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    height: 2.5em;
+    width: 5em;
+    border: none;
+    border-radius: 5px;
+    color: var(--bgColor);
+    background-color: var(--replyUserTag);
 }
