@@ -9,6 +9,7 @@
     --deleteColor: #f36665;
     --replyUserTag: #5a5ba5;
     --lineReplyComment: #e8e9ed;
+    --textAreaFocus: #b2b3b6;
 }
 
 body {
@@ -20,7 +21,7 @@ body {
     width: 100%;
     padding: 0.5em;
     box-sizing: border-box;
-    background-color: var(--bgteste /*--bgColor*/ );
+    background-color: var(--bgColor);
 }
 
 main {
@@ -28,7 +29,6 @@ main {
     flex-direction: column;
     align-items: end;
     width: 42em;
-    background-color: rebeccapurple;
 }
 
 nav {
@@ -60,24 +60,24 @@ a:hover {
     margin: 0.3em 0;
     padding: 1em;
     box-sizing: border-box;
-    background-color: green/*var(--whiteColor)*/;
+    background-color: var(--whiteColor);
 }
 
 .comments-reply {
     display: flex;
     height: 9em;
-    width: 33em;
+    width: 37em;
     border-radius: 8px;
     padding: 1em;
     box-sizing: border-box;
-    background-color: greenyellow;
+    background-color: var(--whiteColor);
 }
 
 .comments-reply-line {
     display: flex;
     justify-content: end;
     height: 9em;
-    width: 38em;
+    width: 39.5em;
     margin: 0.3em 0;
     border-left: 1px solid var(--lineReplyComment);
 }
@@ -105,6 +105,10 @@ a:hover {
 
 .like-container a {
     margin: 0.6em 0;
+}
+
+.like-container a:hover svg path {
+    fill: var(--numberCounterColor);
 }
 
 .text-container {
@@ -159,16 +163,28 @@ a:hover {
     color: var(--replyColor);
 }
 
+.reply-button:hover {
+    opacity: 0.5;
+}
+
 .edit-button {
     font-size: 15px;
     font-weight: 500;
     color: var(--replyColor);
 }
 
+.edit-button:hover {
+    opacity: 0.5;
+}
+
 .delete-button {
     font-size: 15px;
     font-weight: 500;
     color: var(--deleteColor);
+}
+
+.delete-button:hover {
+    opacity: 0.5;
 }
 
 .message-text {
@@ -181,24 +197,53 @@ a:hover {
     color: var(--textColor);
 }
 
-.create-comment {
+.new-comment-container {
     display: flex;
-    align-items: center;
-    height: 5em;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 7em;
     width: 42em;
     border-radius: 8px;
+    padding: 1em;
     margin: 0.3em 0;
-    background-color: #f36665/*var(--whiteColor)*/;
+    box-sizing: border-box;
+    background-color: var(--whiteColor);
+}
+
+.new-comment {
+    font-family: var(--principalFont);
+    height: 6em;
+    width: 37em;
+    resize: none;
+    border: 1px solid var(--lineReplyComment);
+    border-radius: 5px;
+    padding: 0.9em;
+    box-sizing: border-box;
+    color: var(--textColor);
+}
+
+.new-comment:hover {
+    cursor: pointer;
+}
+
+.new-comment:focus {
+    outline: none !important;
+    border: 1px solid var(--textAreaFocus);
 }
 
 .send-button {
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
-    height: 2.5em;
-    width: 5em;
+    height: 2.8em;
+    width: 5.8em;
     border: none;
     border-radius: 5px;
     color: var(--bgColor);
     background-color: var(--replyUserTag);
+}
+
+.send-button:hover {
+    cursor: pointer;
+    opacity: 0.5;
 }
