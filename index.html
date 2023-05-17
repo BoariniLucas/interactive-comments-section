@@ -1,255 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="./assets/css/reset.css">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
-  
-  <title>Interactive comments section</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <title>Interactive comments section</title>
 
-</head>
-<body>
-  <main>
+  </head>
+  <body>
+    <main>
 
-    <section class="comments-container">
-      <div class="comments">
-        <div class="like-container">
-          <a class="like-plus">
-            <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6.33 10.896c.137 0 .255-.05.354-.149.1-.1.149-.217.149-.354V7.004h3.315c.136 0 
-              .254-.05.354-.149.099-.1.148-.217.148-.354V5.272a.483.483 0 0 0-.148-.354.483.483 0 0 
-              0-.354-.149H6.833V1.4a.483.483 0 0 0-.149-.354.483.483 0 0 0-.354-.149H4.915a.483.483 0 0 
-              0-.354.149c-.1.1-.149.217-.149.354v3.37H1.08a.483.483 0 0 
-              0-.354.15c-.1.099-.149.217-.149.353v1.23c0 .136.05.254.149.353.1.1.217.149.354.149h3.333v3.39c0 
-              .136.05.254.15.353.098.1.216.149.353.149H6.33Z" fill="#C5C6EF"/>
-            </svg>
-          </a>
-          
-          <span class="like-number">12</span>
-
-          <a>
-            <svg width="11" height="3" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9.256 2.66c.204 0 .38-.056.53-.167.148-.11.222-.243.222-.396V.722c0-.152-.074-.284-.223-.395a.859.859 
-              0 0 0-.53-.167H.76a.859.859 0 0 0-.53.167C.083.437.009.57.009.722v1.375c0 
-              .153.074.285.223.396a.859.859 0 0 0 .53.167h8.495Z" fill="#C5C6EF"/>
-            </svg>
-          </a>
-
-        </div>
-
-        <div class="text-container">
-          <div class="text-title">
-            <div>
-              <img src="./assets/images/avatars/image-amyrobson.png" height="30px" width="30px">
-
-              <span class="user-name">amyrobson</span>
-              <span class="text-time">1 month ago</span>
-            </div>
+      <section class="comments-container">
+        <div class="comments">
+          <div class="like-container">
+            <a class="like-plus">
+              <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.33 10.896c.137 0 .255-.05.354-.149.1-.1.149-.217.149-.354V7.004h3.315c.136 0 
+                .254-.05.354-.149.099-.1.148-.217.148-.354V5.272a.483.483 0 0 0-.148-.354.483.483 0 0 
+                0-.354-.149H6.833V1.4a.483.483 0 0 0-.149-.354.483.483 0 0 0-.354-.149H4.915a.483.483 0 0 
+                0-.354.149c-.1.1-.149.217-.149.354v3.37H1.08a.483.483 0 0 
+                0-.354.15c-.1.099-.149.217-.149.353v1.23c0 .136.05.254.149.353.1.1.217.149.354.149h3.333v3.39c0 
+                .136.05.254.15.353.098.1.216.149.353.149H6.33Z" fill="#C5C6EF"/>
+              </svg>
+            </a>
             
-            <a class="reply-button">
-              <img src="./assets/images/icon-reply.svg">Reply
-            </a>          
+            <span class="like-number">12</span>
+
+            <a>
+              <svg width="11" height="3" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.256 2.66c.204 0 .38-.056.53-.167.148-.11.222-.243.222-.396V.722c0-.152-.074-.284-.223-.395a.859.859 
+                0 0 0-.53-.167H.76a.859.859 0 0 0-.53.167C.083.437.009.57.009.722v1.375c0 
+                .153.074.285.223.396a.859.859 0 0 0 .53.167h8.495Z" fill="#C5C6EF"/>
+              </svg>
+            </a>
+
           </div>
 
-          <div class="message-text">
-            <p>Impressive! Though it seems the drag feature could be improved. 
-              But overall it looks incredible. You've nailed the design and the responsiveness at 
-              various breakpoints works really well.</p>
-          </div>
-        </div>
-      </div>
-    </section>    
+          <div class="text-container">
+            <div class="text-title">
+              <div>
+                <img src="./assets/images/avatars/image-amyrobson.png" height="30px" width="30px">
 
-    <section class="comments-container">
-      <div class="comments">
-        <div class="like-container">
-          <a class="like-plus">
-            <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6.33 10.896c.137 0 .255-.05.354-.149.1-.1.149-.217.149-.354V7.004h3.315c.136 0 
-              .254-.05.354-.149.099-.1.148-.217.148-.354V5.272a.483.483 0 0 0-.148-.354.483.483 0 0 
-              0-.354-.149H6.833V1.4a.483.483 0 0 0-.149-.354.483.483 0 0 0-.354-.149H4.915a.483.483 0 0 
-              0-.354.149c-.1.1-.149.217-.149.354v3.37H1.08a.483.483 0 0 
-              0-.354.15c-.1.099-.149.217-.149.353v1.23c0 .136.05.254.149.353.1.1.217.149.354.149h3.333v3.39c0 
-              .136.05.254.15.353.098.1.216.149.353.149H6.33Z" fill="#C5C6EF"/>
-            </svg>
-          </a>
-          
-          <span class="like-number">5</span>
-
-          <a>
-            <svg width="11" height="3" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9.256 2.66c.204 0 .38-.056.53-.167.148-.11.222-.243.222-.396V.722c0-.152-.074-.284-.223-.395a.859.859 
-              0 0 0-.53-.167H.76a.859.859 0 0 0-.53.167C.083.437.009.57.009.722v1.375c0 
-              .153.074.285.223.396a.859.859 0 0 0 .53.167h8.495Z" fill="#C5C6EF"/>
-            </svg>
-          </a>
-
-        </div>
-
-        <div class="text-container">
-          <div class="text-title">
-            <div>
-              <img src="./assets/images/avatars/image-maxblagun.png" height="30px" width="30px">
-
-              <span class="user-name">maxblagun</span>
-              <span class="text-time">2 weeks ago</span>
-            </div>
-            
-            <a class="reply-button">
-              <img src="./assets/images/icon-reply.svg">Reply
-            </a>          
-          </div>
-
-          <div class="message-text">
-            <p>Woah, your project looks awesome! How long have you been coding for? I'm still new,
-              but think I want to dive into React as well soon. Perhaps you can give me an insight 
-              on where I can learn React? Thanks!</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="comments-reply-container">
-
-        <div class="comments-reply-line">
-          <div class="comments-reply">
-          
-            <div class="like-container">
-              <a class="like-plus">
-                <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6.33 10.896c.137 0 .255-.05.354-.149.1-.1.149-.217.149-.354V7.004h3.315c.136 0 
-                  .254-.05.354-.149.099-.1.148-.217.148-.354V5.272a.483.483 0 0 0-.148-.354.483.483 0 0 
-                  0-.354-.149H6.833V1.4a.483.483 0 0 0-.149-.354.483.483 0 0 0-.354-.149H4.915a.483.483 0 0 
-                  0-.354.149c-.1.1-.149.217-.149.354v3.37H1.08a.483.483 0 0 
-                  0-.354.15c-.1.099-.149.217-.149.353v1.23c0 .136.05.254.149.353.1.1.217.149.354.149h3.333v3.39c0 
-                  .136.05.254.15.353.098.1.216.149.353.149H6.33Z" fill="#C5C6EF"/>
-                </svg>
-              </a>
+                <span class="user-name">amyrobson</span>
+                <span class="text-time">1 month ago</span>
+              </div>
               
-              <span class="like-number">4</span>
-    
-              <a>
-                <svg width="11" height="3" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.256 2.66c.204 0 .38-.056.53-.167.148-.11.222-.243.222-.396V.722c0-.152-.074-.284-.223-.395a.859.859 
-                  0 0 0-.53-.167H.76a.859.859 0 0 0-.53.167C.083.437.009.57.009.722v1.375c0 
-                  .153.074.285.223.396a.859.859 0 0 0 .53.167h8.495Z" fill="#C5C6EF"/>
-                </svg>
-              </a>
-    
+              <a class="reply-button">
+                <img src="./assets/images/icon-reply.svg">Reply
+              </a>          
             </div>
 
-            <div class="text-container">
-              <div class="text-title">
-                <div>
-                  <img src="./assets/images/avatars/image-ramsesmiron.png" height="30px" width="30px">
-
-                  <span class="user-name">ramsesmiron</span>
-                  <span class="text-time">1 week ago</span>
-                </div>
-                
-                <a class="reply-button">
-                  <img src="./assets/images/icon-reply.svg">Reply
-                </a>          
-              </div>
-
-              <div class="message-text">
-                <p><span class="user-reply-tag">@maxblagun</span>If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, 
-                  and JS before considering React. It's very tempting to jump ahead but lay a 
-                  solid foundation first.
-                </p>
-              </div>
+            <div class="message-text">
+              <p>Impressive! Though it seems the drag feature could be improved. 
+                But overall it looks incredible. You've nailed the design and the responsiveness at 
+                various breakpoints works really well.</p>
             </div>
           </div>
         </div>
+      </section>    
 
-        
-        <div class="comments-reply-line">
-          <div class="comments-reply">
+      <section class="comments-container">
+        <div class="comments">
+          <div class="like-container">
+            <a class="like-plus">
+              <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.33 10.896c.137 0 .255-.05.354-.149.1-.1.149-.217.149-.354V7.004h3.315c.136 0 
+                .254-.05.354-.149.099-.1.148-.217.148-.354V5.272a.483.483 0 0 0-.148-.354.483.483 0 0 
+                0-.354-.149H6.833V1.4a.483.483 0 0 0-.149-.354.483.483 0 0 0-.354-.149H4.915a.483.483 0 0 
+                0-.354.149c-.1.1-.149.217-.149.354v3.37H1.08a.483.483 0 0 
+                0-.354.15c-.1.099-.149.217-.149.353v1.23c0 .136.05.254.149.353.1.1.217.149.354.149h3.333v3.39c0 
+                .136.05.254.15.353.098.1.216.149.353.149H6.33Z" fill="#C5C6EF"/>
+              </svg>
+            </a>
             
-            <div class="like-container">
-              <a class="like-plus">
-                <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6.33 10.896c.137 0 .255-.05.354-.149.1-.1.149-.217.149-.354V7.004h3.315c.136 0 
-                  .254-.05.354-.149.099-.1.148-.217.148-.354V5.272a.483.483 0 0 0-.148-.354.483.483 0 0 
-                  0-.354-.149H6.833V1.4a.483.483 0 0 0-.149-.354.483.483 0 0 0-.354-.149H4.915a.483.483 0 0 
-                  0-.354.149c-.1.1-.149.217-.149.354v3.37H1.08a.483.483 0 0 
-                  0-.354.15c-.1.099-.149.217-.149.353v1.23c0 .136.05.254.149.353.1.1.217.149.354.149h3.333v3.39c0 
-                  .136.05.254.15.353.098.1.216.149.353.149H6.33Z" fill="#C5C6EF"/>
-                </svg>
-              </a>
-              
-              <span class="like-number">2</span>
-    
-              <a>
-                <svg width="11" height="3" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.256 2.66c.204 0 .38-.056.53-.167.148-.11.222-.243.222-.396V.722c0-.152-.074-.284-.223-.395a.859.859 
-                  0 0 0-.53-.167H.76a.859.859 0 0 0-.53.167C.083.437.009.57.009.722v1.375c0 
-                  .153.074.285.223.396a.859.859 0 0 0 .53.167h8.495Z" fill="#C5C6EF"/>
-                </svg>
-              </a>
-    
-            </div>
+            <span class="like-number">5</span>
 
-            <div class="text-container">
-              <div class="text-title">
-                <div>
-                  <img src="./assets/images/avatars/image-juliusomo.png" height="30px" width="30px">
-
-                  <span class="user-name">juliusomo</span>
-
-                  <div class="tag-user"> you </div>
-
-                  <span class="text-time">2 days ago</span>
-                </div>
-                
-                <nav>
-                  <a class="delete-button">
-                    <img src="./assets/images/icon-delete.svg">Delete
-                  </a>
-
-                  <a class="edit-button">
-                    <img src="./assets/images/icon-edit.svg">Edit
-                  </a>
-                </nav>
-                        
-              </div>
-
-              <div class="message-text">
-                <p>
-                  <span class="user-reply-tag">@ramsesmiron</span>
-                  I couldn't agree more with this. Everything moves so fast and it always seems 
-                  like everyone knows the newest library/framework. 
-                  But the fundamentals are what stay constant.
-                </p>
-              </div>
-            </div>
+            <a>
+              <svg width="11" height="3" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.256 2.66c.204 0 .38-.056.53-.167.148-.11.222-.243.222-.396V.722c0-.152-.074-.284-.223-.395a.859.859 
+                0 0 0-.53-.167H.76a.859.859 0 0 0-.53.167C.083.437.009.57.009.722v1.375c0 
+                .153.074.285.223.396a.859.859 0 0 0 .53.167h8.495Z" fill="#C5C6EF"/>
+              </svg>
+            </a>
 
           </div>
+
+          <div class="text-container">
+            <div class="text-title">
+              <div>
+                <img src="./assets/images/avatars/image-maxblagun.png" height="30px" width="30px">
+
+                <span class="user-name">maxblagun</span>
+                <span class="text-time">2 weeks ago</span>
+              </div>
+              
+              <a class="reply-button">
+                <img src="./assets/images/icon-reply.svg">Reply
+              </a>          
+            </div>
+
+            <div class="message-text">
+              <p>Woah, your project looks awesome! How long have you been coding for? I'm still new,
+                but think I want to dive into React as well soon. Perhaps you can give me an insight 
+                on where I can learn React? Thanks!</p>
+            </div>
+          </div>
         </div>
-        
-      </div>           
-    </section>  
 
-    <section class="new-comment-container">
-      <img src="./assets/images/avatars/image-juliusomo.png" height="38px" width="38px">
+        <div class="comments-reply-container">
 
-      <textarea class="new-comment" name="new-comment" placeholder="Add a comment..."></textarea>
+          <div class="comments-reply-line">
+            <div class="comments-reply">
+            
+              <div class="like-container">
+                <a class="like-plus">
+                  <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.33 10.896c.137 0 .255-.05.354-.149.1-.1.149-.217.149-.354V7.004h3.315c.136 0 
+                    .254-.05.354-.149.099-.1.148-.217.148-.354V5.272a.483.483 0 0 0-.148-.354.483.483 0 0 
+                    0-.354-.149H6.833V1.4a.483.483 0 0 0-.149-.354.483.483 0 0 0-.354-.149H4.915a.483.483 0 0 
+                    0-.354.149c-.1.1-.149.217-.149.354v3.37H1.08a.483.483 0 0 
+                    0-.354.15c-.1.099-.149.217-.149.353v1.23c0 .136.05.254.149.353.1.1.217.149.354.149h3.333v3.39c0 
+                    .136.05.254.15.353.098.1.216.149.353.149H6.33Z" fill="#C5C6EF"/>
+                  </svg>
+                </a>
+                
+                <span class="like-number">4</span>
+      
+                <a>
+                  <svg width="11" height="3" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.256 2.66c.204 0 .38-.056.53-.167.148-.11.222-.243.222-.396V.722c0-.152-.074-.284-.223-.395a.859.859 
+                    0 0 0-.53-.167H.76a.859.859 0 0 0-.53.167C.083.437.009.57.009.722v1.375c0 
+                    .153.074.285.223.396a.859.859 0 0 0 .53.167h8.495Z" fill="#C5C6EF"/>
+                  </svg>
+                </a>
+      
+              </div>
 
-      <input class="send-button" type="submit" value="send">
+              <div class="text-container">
+                <div class="text-title">
+                  <div>
+                    <img src="./assets/images/avatars/image-ramsesmiron.png" height="30px" width="30px">
 
-    </section>
-    
-  </main>    
-    
-  <!--
-  <div class="attribution">
-    <a href="https://github.com/BoariniLucas" target="_blank">Coded by Lucas Boarini</a>
-  </div>
-  -->
-</body>
+                    <span class="user-name">ramsesmiron</span>
+                    <span class="text-time">1 week ago</span>
+                  </div>
+                  
+                  <a class="reply-button">
+                    <img src="./assets/images/icon-reply.svg">Reply
+                  </a>          
+                </div>
+
+                <div class="message-text">
+                  <p><span class="user-reply-tag">@maxblagun</span>If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, 
+                    and JS before considering React. It's very tempting to jump ahead but lay a 
+                    solid foundation first.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="comments-reply-line">
+            <div class="comments-reply">
+              
+              <div class="like-container">
+                <a class="like-plus">
+                  <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.33 10.896c.137 0 .255-.05.354-.149.1-.1.149-.217.149-.354V7.004h3.315c.136 0 
+                    .254-.05.354-.149.099-.1.148-.217.148-.354V5.272a.483.483 0 0 0-.148-.354.483.483 0 0 
+                    0-.354-.149H6.833V1.4a.483.483 0 0 0-.149-.354.483.483 0 0 0-.354-.149H4.915a.483.483 0 0 
+                    0-.354.149c-.1.1-.149.217-.149.354v3.37H1.08a.483.483 0 0 
+                    0-.354.15c-.1.099-.149.217-.149.353v1.23c0 .136.05.254.149.353.1.1.217.149.354.149h3.333v3.39c0 
+                    .136.05.254.15.353.098.1.216.149.353.149H6.33Z" fill="#C5C6EF"/>
+                  </svg>
+                </a>
+                
+                <span class="like-number">2</span>
+      
+                <a>
+                  <svg width="11" height="3" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.256 2.66c.204 0 .38-.056.53-.167.148-.11.222-.243.222-.396V.722c0-.152-.074-.284-.223-.395a.859.859 
+                    0 0 0-.53-.167H.76a.859.859 0 0 0-.53.167C.083.437.009.57.009.722v1.375c0 
+                    .153.074.285.223.396a.859.859 0 0 0 .53.167h8.495Z" fill="#C5C6EF"/>
+                  </svg>
+                </a>
+      
+              </div>
+
+              <div class="text-container">
+                <div class="text-title">
+                  <div>
+                    <img src="./assets/images/avatars/image-juliusomo.png" height="30px" width="30px">
+
+                    <span class="user-name">juliusomo</span>
+
+                    <div class="tag-user"> you </div>
+
+                    <span class="text-time">2 days ago</span>
+                  </div>
+                  
+                  <nav>
+                    <a class="delete-button">
+                      <img src="./assets/images/icon-delete.svg">Delete
+                    </a>
+
+                    <a class="edit-button">
+                      <img src="./assets/images/icon-edit.svg">Edit
+                    </a>
+                  </nav>
+                          
+                </div>
+
+                <div class="message-text">
+                  <p>
+                    <span class="user-reply-tag">@ramsesmiron</span>
+                    I couldn't agree more with this. Everything moves so fast and it always seems 
+                    like everyone knows the newest library/framework. 
+                    But the fundamentals are what stay constant.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          
+        </div>           
+      </section>  
+
+      <section class="new-comment-container">
+        <img src="./assets/images/avatars/image-juliusomo.png" height="38px" width="38px">
+
+        <textarea class="new-comment" name="new-comment" placeholder="Add a comment..."></textarea>
+
+        <input class="send-button" type="submit" value="send">
+
+      </section>
+      
+    </main>    
+      
+    <!--
+    <div class="attribution">
+      <a href="https://github.com/BoariniLucas" target="_blank">Coded by Lucas Boarini</a>
+    </div>
+    -->
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
