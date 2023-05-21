@@ -60,7 +60,7 @@ a:hover {
     margin: 0.3em 0;
     padding: 1em;
     box-sizing: border-box;
-    background-color: var(--whiteColor);
+    background-color: /*var(--whiteColor)*/ red;
 }
 
 .comments-reply {
@@ -70,7 +70,7 @@ a:hover {
     border-radius: 8px;
     padding: 1em;
     box-sizing: border-box;
-    background-color: var(--whiteColor);
+    background-color: /*var(--whiteColor)*/ green;
 }
 
 .comments-reply-line {
