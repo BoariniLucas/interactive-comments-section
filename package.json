@@ -1,0 +1,20 @@
+{
+  "name": "comments-section",
+  "version": "1.0.0",
+  "description": "Seção de comentários",
+  "main": "./assets/js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BoariniLucas/interactive-comments-section.git"
+  },
+  "author": "Lucas Boarini",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/BoariniLucas/interactive-comments-section/issues"
+  },
+  "homepage": "https://github.com/BoariniLucas/interactive-comments-section#readme"
+}

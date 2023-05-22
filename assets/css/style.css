@@ -44,6 +44,8 @@ a:hover {
 .comments-container {
     display: flex;
     flex-direction: column;
+
+    background-color: yellow;
 }
 
 .comments-reply-container {
@@ -52,7 +54,7 @@ a:hover {
     align-items: flex-end;
 }
 
-.comments {
+.comment {
     display: flex;
     height: 9em;
     width: 42em;
